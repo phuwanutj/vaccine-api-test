@@ -1,8 +1,9 @@
 import unittest
 import requests
 from datetime import datetime
+from decouple import config
 
-URL = "https://wcg-apis-test.herokuapp.com/"
+URL = config('URL')
 
 
 class ReservationApiTest(unittest.TestCase):
